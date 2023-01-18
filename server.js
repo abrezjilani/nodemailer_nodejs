@@ -28,14 +28,14 @@ async function sendEmail(userDetails) {
   let transporter = nodeMailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'appointmentsataarvy@gmail.com',
-      pass: 'tikwrkspgzgeeska',
+      user: 'xyz@gmail.com',
+      pass: '**********',
     },
   });
 
   let mailDetails = {
-    from: 'appointmentsataarvy@gmail.com',
-    to: 'enquiry@aarvyhealthcare.com',
+    from: 'xyz@gmail.com',
+    to: 'abc@gmail.com',
     subject: 'Test mail',
     text: `Name: ${userDetails.name}, Contact: ${userDetails.contact}, Date Chosen: ${userDetails.date}, Time Chosen: ${userDetails.time}`,
   };
